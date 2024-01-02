@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -15,16 +16,16 @@ const Footer = () => {
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6 ">Home</a>
+                                <Link to={`/`}><a href="#" className="mr-4 hover:underline md:mr-6 ">Home</a></Link>
                             </li>
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6">Food Details</a>
+                                <Link to={`/aviableFoods`}><a href="#" className="mr-4 hover:underline md:mr-6">Food Details</a></Link>
                             </li>
                             <li>
-                                <a href="#" className="mr-4 hover:underline md:mr-6 ">Food Request</a>
+                                <Link to={`/foodRequest`}><a href="#" className="mr-4 hover:underline md:mr-6 ">Food Request</a></Link>
                             </li>
                             <li>
-                                <a href="#" className="hover:underline">Contact</a>
+                                <Link to={`/contactPaige`}><a href="#" className="hover:underline">Contact</a></Link>
                             </li>
                         </ul>
                     </div>

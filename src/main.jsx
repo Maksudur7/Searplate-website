@@ -20,6 +20,7 @@ import PraivetRoute from './Praivet Route File/PraivetRoute.jsx';
 import TableApp from './Manage my food file/TableApp.jsx';
 import ManageSingelTable from './Manage singel Table Requst file/ManageSingelTable.jsx';
 import ManageTable from './Manage my food file/ManageTable.jsx';
+import ContactPaige from './Contact paige/ContactPaige.jsx';
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: '/cardDettals/:id',
         element: <CardDettles></CardDettles>
+      },
+      {
+        path: '/contactPaige',
+        element: <ContactPaige></ContactPaige>
       },
       // {
       //   path: '/managemyfoods',
