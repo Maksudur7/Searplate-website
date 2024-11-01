@@ -22,7 +22,7 @@ const Navbars = () => {
                 <Navbar.Collapse>
                     <NavLink to={`/`}>
                         <Navbar.Link>
-                            Home
+                            Home 
                         </Navbar.Link>
                     </NavLink>
                     <NavLink to={`/aviableFoods`}>

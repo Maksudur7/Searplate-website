@@ -8,6 +8,7 @@ import HomeSection2 from "./HomeSection2";
 
 
 
+
 const Home = () => {
     const [datas, setdatas] = useState([])
     const [sorting, setSorting] = useState(true)
@@ -19,11 +20,12 @@ const Home = () => {
             .then(res => res.json())
             .then(data => {
                 setdatas(data)
+                console.log(data)
                 // data.forEach(Element => arr.push(Element.Second))
             })
     }, [sorting])
 
-
+    
 
 
     return (

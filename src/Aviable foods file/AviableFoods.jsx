@@ -13,6 +13,7 @@ const AviableFoods = () => {
         // useAxiosSecure.get('/addFood')
             .then(res => res.json())
             .then(data => {
+                console.log(data)
                 const dataMap = data.filter(Element => Element.foodName.toLowerCase().includes(datas))
                 setSarchData(dataMap)
             })

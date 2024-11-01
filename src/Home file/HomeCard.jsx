@@ -9,7 +9,7 @@ const HomeCard = ({ cards }) => {
 
     const { _id, countvalue, foodName, photo, location, ExpaireTime, additionalNode, userPhoto, userName, status } = cards
     console.log(cards)
-    
+
     const handelCardDettles = () => {
         const item = JSON.parse(localStorage.getItem('card'))
         if (!item) {
@@ -19,6 +19,8 @@ const HomeCard = ({ cards }) => {
             localStorage.setItem('card', JSON.stringify(cards))
         }
     }
+
+   
 
     return (
         <div className='mt-5'>
