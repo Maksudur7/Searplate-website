@@ -9,7 +9,7 @@ const AviableFoods = () => {
     const [sarchData, setSarchData] = useState([])
     useEffect(() => {
 
-        fetch(' http://localhost:5000/addFood')
+        fetch('https://searplate-network-surversite.vercel.app/addFood')
         // useAxiosSecure.get('/addFood')
             .then(res => res.json())
             .then(data => {

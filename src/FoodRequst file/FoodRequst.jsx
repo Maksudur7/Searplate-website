@@ -11,8 +11,8 @@ const FoodRequst = () => {
     const [data, setdata] = useState([])
     console.log(data)
     useEffect(() => {
-        //loader: () => fetch(' http://localhost:5000/productRequst')
-        fetch(`http://localhost:5000/productRequst?email=${users?.email}`, { credentials: 'include' })
+        
+        fetch(`https://searplate-network-surversite.vercel.app/productRequst?email=${users?.email}`, { credentials: 'include' })
             .then(res => res.json())
             .then(foods => {
                 console.log(foods)

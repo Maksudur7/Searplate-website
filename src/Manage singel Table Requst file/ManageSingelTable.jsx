@@ -15,7 +15,7 @@ const ManageSingelTable = () => {
     //     console.log(RequstUser)
     // },[])
     useEffect(() => {
-        fetch(' http://localhost:5000/productRequst')
+        fetch(' https://searplate-network-surversite.vercel.app/productRequst')
             .then(res => res.json())
             .then(data => {
                 console.log(data)

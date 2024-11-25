@@ -59,12 +59,12 @@ const router = createBrowserRouter([
       // {
       //   path: '/managemyfoods',
       //   element: <PraivetRoute><ManageMyFood></ManageMyFood></PraivetRoute>,
-      //   loader: () => fetch(' http://localhost:5000/addFood')
+      //  
       // },
       {
         path: '/managemyfoods',
         element: <PraivetRoute><TableApp></TableApp></PraivetRoute>,
-        loader: () => fetch(' http://localhost:5000/addFood')
+        loader: () => fetch(' https://searplate-network-surversite.vercel.app/addFood')
       },
       {
         path: '/foodRequest',
@@ -73,12 +73,12 @@ const router = createBrowserRouter([
       {
         path: '/manageSingelFood/:id',
         element: <ManageSingelTable></ManageSingelTable>,
-        loader: ({ params }) => fetch(` http://localhost:5000/addFood/${params.id}`)
+        loader: ({ params }) => fetch(` https://searplate-network-surversite.vercel.app/addFood/${params.id}`)
       },
       {
         path: '/manageTable/:id',
         element: <ManageTable></ManageTable>,
-        loader: ({ params }) => fetch(` http://localhost:5000/addFood/${params.id}`)
+        loader: ({ params }) => fetch(` https://searplate-network-surversite.vercel.app/addFood/${params.id}`)
       }
     ]
   },

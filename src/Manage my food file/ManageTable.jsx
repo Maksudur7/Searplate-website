@@ -32,7 +32,7 @@ const ManageTable = () => {
         const status = e.target.status.value
         const addFoods = { countvalue, foodName, photo, location, ExpaireTime, additionalNode, status }
         console.log(countvalue, foodName, photo, location, additionalNode)
-        fetch(` http://localhost:5000/addFood/${_id}`, {
+        fetch(`https://searplate-network-surversite.vercel.app/addFood/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -52,7 +52,7 @@ const ManageTable = () => {
                     });
                 }
             })
-        fetch(` http://localhost:5000/productRequst/${_id}`, {
+        fetch(` https://searplate-network-surversite.vercel.app/productRequst/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

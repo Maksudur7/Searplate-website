@@ -35,13 +35,13 @@ const AuthProvider = ({ children }) => {
             const loggedUser = { email: userEmail }
 
             if (user) {
-                axios.post('http://localhost:5000/jwtToken', loggedUser, { withCredentials: true })
+                axios.post('https://searplate-network-surversite.vercel.app/jwtToken', loggedUser, { withCredentials: true })
                     .then(res => {
                         console.log('token response', res.data)
                     })
             }
             else {
-                axios.post('http://localhost:5000/logout', loggedUser, {
+                axios.post('https://searplate-network-surversite.vercel.app/logout', loggedUser, {
                     withCredentials: true
                 })
                     .then(res => {

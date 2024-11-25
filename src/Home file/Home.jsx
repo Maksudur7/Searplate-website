@@ -16,7 +16,7 @@ const Home = () => {
     console.log(sorting)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/addFood?sort=${sorting ? 'asc' : 'desc'}`)
+        fetch(`https://searplate-network-surversite.vercel.app/addFood?sort=${sorting ? 'asc' : 'desc'}`)
             .then(res => res.json())
             .then(data => {
                 setdatas(data)
@@ -25,7 +25,7 @@ const Home = () => {
             })
     }, [sorting])
 
-    
+
 
 
     return (

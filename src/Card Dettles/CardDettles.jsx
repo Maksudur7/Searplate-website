@@ -28,7 +28,7 @@ const CardDettles = () => {
         console.log(photo)
         console.log(additionalNodes, donationMony)
 
-        fetch(' http://localhost:5000/productRequst', {
+        fetch('http:https://searplate-network-surversite.vercel.app/localhost:5000/productRequst', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

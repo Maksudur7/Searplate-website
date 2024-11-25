@@ -26,7 +26,7 @@ const FoodRequstDettles = ({ oneData, datas, setdata }) => {
                     text: "Your file has been deleted.",
                     icon: "success"
                 });
-                fetch(` http://localhost:5000/productRequst/${id}`, {
+                fetch(`https://searplate-network-surversite.vercel.app/productRequst/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

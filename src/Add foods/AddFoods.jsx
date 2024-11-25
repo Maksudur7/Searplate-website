@@ -28,7 +28,6 @@ const AddFoods = () => {
         e.preventDefault()
         const status = 'available'
         const postTime = moment().format(' h:mm:ss ')
-        // console.log(arr[0])
         console.log(postTime.split(':'))
         const time = postTime.split(':')
         console.log(time[0])
@@ -36,9 +35,6 @@ const AddFoods = () => {
         const min = time[1] * 60
         const sec = time[2]
         const Second = hour + min + sec
-        // console.log(hour, min, sec)
-        // console.log(total)
-        // arr.push(total)
         const countvalue = e.target.countvalue.value
         const foodName = e.target.foodName.value
         const photo = e.target.photo.value
@@ -47,7 +43,7 @@ const AddFoods = () => {
         const additionalNode = e.target.additionalNode.value
         const addFoods = { countvalue, foodName, photo, location, ExpaireTime, additionalNode, userPhoto, userEmail, userName, postTime, status,Second }
         console.log(countvalue, foodName, photo, location, ExpaireTime, additionalNode, userPhoto, userName, userEmail)
-        fetch(' http://localhost:5000/addFood', {
+        fetch('https://searplate-network-surversite.vercel.app/addFood', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

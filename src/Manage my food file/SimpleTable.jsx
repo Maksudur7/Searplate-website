@@ -30,7 +30,7 @@ const SimpleTable = ({ columns, data, setMyCards }) => {
                     icon: "success"
 
                 });
-                fetch(` http://localhost:5000/addFood/${id}`, {
+                fetch(` https://searplate-network-surversite.vercel.app/addFood/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
